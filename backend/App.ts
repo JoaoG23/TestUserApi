@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import 'dotenv/config';
+import path from 'path';
 
 
 import userRouters from './routers/userRouters';
@@ -22,8 +23,8 @@ class App {
     }
     
     private routers():void{
-        this.express.use('/', userRouters);
-        // this.express.use('/', express.static(path.join(__dirname,'view')))
+        this.express.use('/users', userRouters);
+        this.express.use('/', express.static(path.join(__dirname, '..','frontend', 'build')))
     }
 }
 

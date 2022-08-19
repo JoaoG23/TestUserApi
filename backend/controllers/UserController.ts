@@ -1,62 +1,25 @@
 import { Request, Response } from 'express';
 import axios from 'axios';
-import { type } from 'os';
 
+import Filtros from '../services/Filtros';
+import Ordernagens from '../services/Ordenagens';
 class UserController {
     public async listAll(req: Request, res: Response) {
+
       try {
 
         const resposta = await axios.get('https://jsonplaceholder.typicode.com/users/');
-        const dadosUsuario = resposta.data;
-        const dadosEssenciais = dadosUsuario;
+        const informacoesUsuario = resposta.data;
+        const lista5Usuarios = informacoesUsuario.slice(0,5);
 
-        
-        interface User {
-          id:number
-          name:string
-          username:string
-          email:string
-        }
+        let estoqueInformacoesEssenciais:object[] = [];
 
-        class DadosEssenciais {
+        Filtros.filtrarDadosUsuarios(lista5Usuarios, estoqueInformacoesEssenciais);
+        Ordernagens.ordernarPorNomeUsuarios(estoqueInformacoesEssenciais);
 
-          id:number;
-          name:string;
-          username:string;
-          email:string;
-
-           constructor(id:number, name:string ,username:string, email:string  ){
-            this.id = id;
-            this.name = name;
-            this.username = username;
-            this.email = email;
-            }
-        }
-        
-        let estoqueDadosEssenciais:Array<object>;
-        dadosEssenciais.forEach(dado => {
-          // console.info(new DadosEssenciais(dado.id, dado.name, dado.username, dado.email));
-
-          estoqueDadosEssenciais.push(new DadosEssenciais(dado.id, dado.name, dado.username, dado.email))
-
-          
-
-        });
-        // axios.get('https://jsonplaceholder.typicode.com/users/')
-
-        // Ordenando 
-        // dados.sort((firstName:User , lastName:User) => {
-        //   if (firstName.name < lastName.name) {
-        //     return -1;
-        //   } else {
-        //     return true;
-        //   }
-        // })
-        console.log(estoqueDadosEssenciais)
-        
-        res.json(estoqueDadosEssenciais);
+        res.json(estoqueInformacoesEssenciais);
       } catch (error) {
-        res.send(error);
+        res.status(400).json(error);
         console.error(error);
       }
     }

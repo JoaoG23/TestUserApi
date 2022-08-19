@@ -1,0 +1,15 @@
+
+.header {
+    height: 3.5em;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color:var(--branco);
+    box-shadow: 1px 1px 10px var(--roxosombra);
+    background-color: var(--roxo);
+
+    text-align: center;
+}
