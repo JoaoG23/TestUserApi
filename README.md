@@ -35,6 +35,7 @@ Este é o projeto para consumo APIs, cujo o objetivo buscar 5 usuários, lista-l
 4. Digite um **npm install** para baixa todas as dependências
 5. Crie um arquivo **.env**
 6. Coloque o numero da porta para que a aplicacão rode nesse arquivo **.env**
+7. Digite 
 
 *Como no exemplo abaixo:*
 
@@ -42,7 +43,7 @@ Este é o projeto para consumo APIs, cujo o objetivo buscar 5 usuários, lista-l
 PORT_SERVER=2001
 ```
 
-Observação: **Caso, a porta que você colocou tenha algum problema. A aplicação iniciará na porta padrão dela. Que se encontra no caminho a diante ➡️:**  *backend\server.ts*
+Observação: **Caso, a porta que você colocou tenha algum problema. A aplicação iniciará na porta padrão dela 3210. Que se encontra no caminho a diante ➡️:**  *backend\server.ts*
 
 ```jsx
 app.listen(process.env.PORT_SERVER || 3210, () => {
