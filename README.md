@@ -1,1 +1,64 @@
-# TestUserApi
+# TestUserApi ➡️
+
+### Indice 🗂️
+
+1. Introdução
+2. Tech usadas
+3. Como Instalar
+4. Como Usar
+5. Licença
+
+### Introdução 🚪
+
+Este é o projeto para consumo APIs, cujo o objetivo buscar 5 usuários, lista-los em ordem alfabética em seguida através de uma API GATEWAY como middleware de consumo para o front-end.
+
+![url.png](./assets/apres.gif)
+
+### Como Instalar 🧑‍🔧
+
+1. Tenha o node instalado em seu PC
+2. Faça o clone do projeto
+3. Entre na pasta **backend**
+4. Digite um **npm install** para baixa todas as dependências
+5. Crie um arquivo **.env**
+6. Coloque o numero da porta para que a aplicacão rode nesse arquivo **.env**
+
+*Como no exemplo abaixo:*
+
+```markdown
+PORT_SERVER=2001
+```
+
+Observação: **Caso, a porta que você colocou tenha algum problema. A aplicação iniciará na porta padrão dela. Que se encontra no caminho a diante ➡️:**  *backend\server.ts*
+
+```jsx
+app.listen(process.env.PORT_SERVER || 3210, () => {
+    console.info(`🌍 Servidor rodando na porta  ${process.env.PORT_SERVER}`)
+});
+```
+
+- agora na pasta backend mesmo digite **npm run prod** é aplicacão irá rodar
+
+### Como usar 🙇‍♂️
+
+1. Entre em um navegador
+2. Digite na barra de pesquisa o endereço a seguir adiante: [http://localhost:3210/](http://localhost:3210/users/) ou endereço junto com a porta que você selecionou na instalação do **.env**
+
+![url.png](./assets/url.png)
+
+1. Assim a aplicação estará rodando normalmente.
+
+### Autor
+---
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/80895578?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Joao Guilherme</b></sub></a> <a href="https://github.com/JoaoG23/">🚀</a>
+
+
+Feito com 🤭 por Joao Guilherme 👋🏽 Entre em contato!
+
+[![Linkedin Badge](https://img.shields.io/badge/-Joao-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jaoo/)](https://www.linkedin.com/in/joaog123/) 
+[![Badge](https://img.shields.io/badge/-joaoguilherme94@live.com-c80?style=flat-square&logo=Microsoft&logoColor=white&link=mailto:joaoguilherme94@live.com)](mailto:joaoguilherme94@live.com)
+
+### **License**
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
