@@ -35,7 +35,6 @@ Este é o projeto para consumo APIs, cujo o objetivo buscar 5 usuários, lista-l
 4. Digite um **npm install** para baixa todas as dependências
 5. Crie um arquivo **.env**
 6. Coloque o numero da porta para que a aplicacão rode nesse arquivo **.env**
-7. Digite 
 
 *Como no exemplo abaixo:*
 
@@ -56,7 +55,7 @@ app.listen(process.env.PORT_SERVER || 3210, () => {
 ### Como usar 🙇‍♂️
 
 1. Entre em um navegador
-2. Digite na barra de pesquisa o endereço a seguir adiante: [http://localhost:3210/](http://localhost:3210/users/) ou endereço junto com a porta que você selecionou na instalação do **.env**
+2. Digite na barra de pesquisa o endereço a seguir adiante: [rota](http://localhost:3210/users/) ou endereço junto com a porta que você selecionou na instalação do **.env**
 
 ![url.png](./assets/url.png)
 
