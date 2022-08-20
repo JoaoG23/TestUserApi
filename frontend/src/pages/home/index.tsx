@@ -17,7 +17,7 @@ const Home = () => {
 
   } = useFetch<Usuario[]>({
     method: "get",
-    url: "/"
+    url: "/users"
   });
 
   console.log(usuarios);
