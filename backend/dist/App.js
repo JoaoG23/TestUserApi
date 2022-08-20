@@ -20,7 +20,7 @@ class App {
     }
     routers() {
         this.express.use('/users', userRouters_1.default);
-        this.express.use('/', express_1.default.static(path_1.default.join(__dirname, '..', '..', 'frontend', 'build')));
+        this.express.use('/', express_1.default.static(path_1.default.join(__dirname, '..','..', 'frontend', 'build')));
     }
 }
 exports.default = new App().express;
