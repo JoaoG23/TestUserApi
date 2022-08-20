@@ -32,25 +32,8 @@ Este é o projeto para consumo APIs, cujo o objetivo buscar 5 usuários, lista-l
 1. Tenha o node instalado em seu PC
 2. Faça o clone do projeto
 3. Entre na pasta **backend**
-4. Digite um **npm install** para baixa todas as dependências
-5. Crie um arquivo **.env**
-6. Coloque o numero da porta para que a aplicacão rode nesse arquivo **.env**
-
-*Como no exemplo abaixo:*
-
-```markdown
-PORT_SERVER=2001
-```
-
-Observação: **Caso, a porta que você colocou tenha algum problema. A aplicação iniciará na porta padrão dela 3210. Que se encontra no caminho a diante ➡️:**  *backend\server.ts*
-
-```jsx
-app.listen(process.env.PORT_SERVER || 3210, () => {
-    console.info(`🌍 Servidor rodando na porta  ${process.env.PORT_SERVER}`)
-});
-```
-
-- agora na pasta backend mesmo digite **npm run prod** é aplicacão irá rodar
+4. Digite um **npm install** para baixa todas as dependências.
+5. Digite um **npm run prod** para iniciar a aplicação.
 
 ### Como usar 🙇‍♂️
 
