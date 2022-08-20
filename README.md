@@ -38,7 +38,7 @@ Este é o projeto para consumo APIs, cujo o objetivo buscar 5 usuários, lista-l
 ### Como usar 🙇‍♂️
 
 1. Entre em um navegador
-2. Digite na barra de pesquisa o endereço a seguir adiante: [http://localhost:2001/](http://localhost:2001/users/) ou endereço junto com a porta que você selecionou na instalação do **.env**
+2. Digite na barra de pesquisa o endereço a seguir adiante: [http://localhost:2001/](http://localhost:2001/users/) ou endereço junto com a porta que você selecionou.
 
 ![url.png](./assets/url.png)
 
