@@ -24,7 +24,7 @@ class App {
     
     private routers():void{
         this.express.use('/users', userRouters);
-        this.express.use('/', express.static(path.join(__dirname, '..','frontend', 'build')))
+        this.express.use('/', express.static(path.join(__dirname, '..','frontend', 'view')))
     }
 }
 
